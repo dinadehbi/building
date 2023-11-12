@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(118, 221, 255) 25%, #ffffff) ;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    perspective: 1000px;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .floor1, .floor2, .floor3, .floor4{
+    width: 500px;
+    height: 320px;
+    background: #ffffff;
+    transform-style: preserve-3d;
+    transform-origin: 50% 80%;
+    transform: rotateX(80deg) rotateZ(0deg);
+    position: absolute;
+  }
+  
+  
+  .side{
+    width: 450px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+  }
+  .left{
+    transform-origin: 0% 0%;
+    transform: rotateZ(90deg) rotateX(90deg) translate3d(25px, 0px, 25px); 
+  }
+  .right{
+    right: 0px; 
+    transform-origin: 100% 0%;
+    transform: rotateZ(-90deg) rotateX(90deg) translate3d(155px, 0px, 27px);
+  }
+  .front{
+    bottom: 0px;
+    transform-origin: 100% 100%;
+    transform: rotateX(-90deg) translate3d(25px, 0px, -25px); 
+  }
+  .back{
+    transform-origin: 0% 0%;
+    transform: rotateX(90deg) translate3d(25px, 0px, -25px);
+  }
+  .window{
+    width: 90px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: #181b38;
+    background: repeating-linear-gradient( #a9a9a9 0px 3px, black 3px 4px);
+  }
+  .color{
+    background: rgba(41, 212, 255, 0.351);
+  }
+  .dark{
+    background: #dfdfdfbd;
+  }
+  .man{
+    background: rgba(41, 212, 255, 0.351);
+    position: relative;
+  }
+  
+  .man::before{
+    content: "";
+    height: 100px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    background: repeating-linear-gradient(to  right , #a9a9a9 0px 2px, black 2px 3px);
+  }
+  
+  .man::after{
+    content: "";
+    height: 100px;
+    width: 20px;
+    position: absolute;
+    right: 0px;
+    background: repeating-linear-gradient(to  right , #a9a9a9 0px 2px, black 2px 3px);
+  }
+  
+  .man-image{
+    height: 50px;
+    width: 35px;
+    position: absolute;
+    left: 25px;
+    top: 35px;
+  }
+  .half{
+    background: rgba(41, 212, 255, 0.351);
+    position: relative;
+  }
+  .half::before{
+    content: "";
+    background-color: #616161;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+  }
+  .half::after{
+    content: "";
+    background: repeating-linear-gradient( #dadada 0px 2px, black 2px 3px);    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+  }
+  
+  .sides{
+    width: 500px;
+    height: 25px;
+    background:#dfdfdf;
+    position: absolute;
+  }
+  .roof{
+    width: 320px;
+    height: 25px;
+    background-color: rgb(202, 202, 202);
+    position: absolute;
+  }
+  .front-side{
+    bottom: 0px;
+    transform-origin: 0% 100%;
+    transform: rotateX(-90deg);
+  }
+  
+  .back-side{
+    transform-origin: 0% 0%;
+    transform: rotateX(90deg);
+  }
+  .left-side{
+    left: 0;
+    transform-origin: 0% 0%;
+    transform: rotateZ(90deg)  rotateX(90deg);
+    
+  }
+  
+  .right-side{
+    left: 100%;
+    transform-origin: 0% 0%;
+    transform: rotateZ(90deg) rotateX(90deg); 
+  }
+  .plant1{
+    height: 60px;
+    width: 60px;
+   transform:  rotateZ(0deg) rotateX(-90deg) translate3d(25px, -30px, 260px);
+  }
+  
+  .plant2{
+    height: 60px;
+    width: 40px;
+    transform:  rotateZ(0deg) rotateX(-90deg) translate3d(-5px, -35px, 270px);
+  }
+  .plant3{
+    height: 110px;
+    width: 100px;
+    transform:  rotateZ(180deg) rotateX(0deg) translate3d(5px, 55px, 0px);
+
+  }
+  .plantthree{
+    height: 110px;
+    width: 100px;
+    transform:  rotateZ(180deg) rotateX(0deg) rotateY(0deg) translate3d(-120px, 55px, 0px);
+
+  }
+
+  
+  
+  .floor2{
+    bottom: 100px;
+  }
+  .floor3{
+    bottom: 200px;
+  } 
+  .floor4{
+    bottom: 300px;
+  }
